@@ -1,0 +1,33 @@
+.container {
+    font-family: $font-stack-primary;
+    font-size: $font-cont-size;
+    line-height: 1.6em;
+    color: $color-text;
+    text-align: left;
+}
+
+.link {
+    color: $color-secondary;
+    :hover {
+        color: $color-hover;
+    }
+    
+}
+.blockquote {
+    font-size: $font-cont-size*1.2;
+    font-style: italic;
+}
+.headline--primary {
+    color: $color-text;
+    font-size: $font-cont-size;
+}
+.headline--secondary {
+    color: $color-primary;
+    font-size: $font-cont-size;
+}
+
+.card {
+    &-p {
+        line-height: 5em;
+    }
+}

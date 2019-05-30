@@ -1,0 +1,10 @@
+.img-logo-center {
+    @extend %img;
+}
+.img--frame {
+    @extend %img;
+    border: 1px solid $color-text;
+}
+.img--avatar {
+    @extend %img;
+}

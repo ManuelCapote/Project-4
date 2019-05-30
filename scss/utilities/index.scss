@@ -4,7 +4,10 @@
 
 // Utilities 
 
-@import 'extends',
+@import 
+        'variables',
+        'placeholders',
+        'extends',
         'functions',
-        'mixins',
-        'variables';
+        'mixins';
+        

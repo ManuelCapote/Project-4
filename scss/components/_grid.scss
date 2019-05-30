@@ -38,6 +38,7 @@
         // from the  media query
         margin-top: 10px;
         flex-basis: 100%;
+        @include center;
 
         // NOTE: replace with media query mixin if aiming for exceeds
         @media (min-width: 768px) {
@@ -65,4 +66,8 @@
       margin-left: 10px;
     }
   }
+}
+
+.grid-logo-center {
+  @include img-grid-center;
 }

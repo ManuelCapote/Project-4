@@ -1,0 +1,29 @@
+.btn--default {
+    @include btns {
+        background-color: $color-btn-default;
+    }     
+}
+
+.btn--success {
+    @include btns {
+        background-color: $color-btn-success;
+    }    
+}
+
+.btn--error {
+    @include btns {
+        background-color: $color-btn-error;
+    }    
+}
+
+.btn--warning {
+    @include btns {
+        background-color: $color-btn-warning;
+    }    
+}
+
+.btn--info {
+    @include btns {
+        background-color: $color-btn-info;
+    }    
+}

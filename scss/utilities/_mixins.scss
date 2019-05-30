@@ -1,0 +1,99 @@
+// Mixins 
+
+// Media Queries
+@mixin mq-mobile {
+    @media (max-width: $max-break-mobile) {
+        @content;
+    }
+}
+
+@mixin mq-desktop {
+    @media (min-width: $min-break-desktop) {
+        max-width: $max-width;
+        @content;
+    }
+}
+
+// Flexbox
+@mixin flexbox-columns-center {
+    display: flex;
+    flex-direction: column;
+    @content;
+}
+
+@mixin flexbox-rows-center {
+    display: flex;
+    flex-direction: row;
+    @content;
+}
+
+// Center Containers
+
+@mixin center {
+        width: 90%;
+        max-width: $max-width;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+// Buttons
+@mixin btns {
+    display: block;
+    border: none;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    border-radius: 5px;
+    height: 40px;
+    width: 100%;
+    color: $white;
+    font-size: $text-btn-size;
+    text-transform: uppercase;
+    font-weight: bold;
+    @content;
+}
+
+// Grid for images
+
+@mixin img-grid-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    @content;
+}
+
+// Navigation
+
+@mixin nav {
+    @content;
+    margin-top: 30px;
+    list-style-type: none;
+    width: 90%;
+    padding-left: 0;
+    padding-right: 0;
+
+    ul {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    a {
+        display: block;
+        text-align: center;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        font-size: $font-cont-size;
+        color: $color-text;
+        text-decoration: none;
+        width: 100%;
+        &:hover {
+            background: $color-primary;
+            border-radius: 5px;
+            color: $white;
+       
+
+        }
+    }
+}
+
+
+
