@@ -1,18 +1,18 @@
 .nav {
-    @include nav {};
+    @include nav-panel;
 }
 
+@include mq-break ('m') {
+    .nav {
+        margin-top: 21px;
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
 
-// .nav-item {
-//     &:a {
-//         text-decoration: none;
-//     }
+    }
 
-// }
-
-// .nav {
-//     display: flex;
-//     flex-wrap: wrap;
-//     flex-direction: column;
-// }
-
+    .nav a {
+        margin-left: 15px;
+    }
+}

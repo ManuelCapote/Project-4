@@ -1,18 +1,12 @@
 // Mixins 
 
 // Media Queries
-@mixin mq-mobile {
-    @media (max-width: $max-break-mobile) {
+@mixin mq-break($break) {
+    @media (min-width: $break-m) {
         @content;
     }
-}
+  }
 
-@mixin mq-desktop {
-    @media (min-width: $min-break-desktop) {
-        max-width: $max-width;
-        @content;
-    }
-}
 
 // Flexbox
 @mixin flexbox-columns-center {
@@ -37,19 +31,24 @@
       }
 
 // Buttons
-@mixin btns {
+@mixin btns($break) {
     display: block;
     border: none;
     margin-top: 25px;
     margin-bottom: 25px;
     border-radius: 5px;
     height: 40px;
-    width: 100%;
+    width: 90%;
     color: $white;
     font-size: $text-btn-size;
     text-transform: uppercase;
     font-weight: bold;
     @content;
+
+ @if $break == 'm' {
+    margin-right: 10px;
+    width: 90%; 
+ }
 }
 
 // Grid for images
@@ -63,37 +62,37 @@
 
 // Navigation
 
-@mixin nav {
-    @content;
-    margin-top: 30px;
+@mixin nav-panel {
+    margin-top: 5px;
     list-style-type: none;
-    width: 90%;
-    padding-left: 0;
-    padding-right: 0;
-
-    ul {
-        width: 100%;
-        margin-left: 0;
-    }
+    padding-right: 1em;
+    padding-left: 1em;
 
     a {
         display: block;
         text-align: center;
-        padding-top: 15px;
-        padding-bottom: 15px;
-        font-size: $font-cont-size;
+        padding: 10px 15px;
         color: $color-text;
         text-decoration: none;
-        width: 100%;
-        &:hover {
-            background: $color-primary;
-            border-radius: 5px;
-            color: $white;
-       
-
-        }
     }
+
+    a:hover {
+        border-radius: 5px;
+        color: $white;
+        background-color:$color-primary;
+    }
+
+    @content;
 }
 
 
 
+// Grid Col
+
+@mixin grid-col-theme {
+    @content;
+    margin-top: 0;
+    padding: 7px;
+    border-radius: 5px;
+    margin-top: 5px;
+}

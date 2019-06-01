@@ -15,9 +15,8 @@
     padding: 1em 10px;
     display: flex;
     flex-direction: column;
-
     // NOTE: replace with media query mixin if aiming for exceeds
-    @media (min-width: 768px) {
+    @include mq-break('m') {
       flex-direction: row;
     }
   }
@@ -41,7 +40,7 @@
         @include center;
 
         // NOTE: replace with media query mixin if aiming for exceeds
-        @media (min-width: 768px) {
+        @include mq-break('m')  {
 
           // base stlyes applied to all grid columns
           margin-top: 0;
@@ -60,7 +59,7 @@
   & + & {
 
     // NOTE: replace with media query mixin if aiming for exceeds
-    @media (min-width: 768px) {
+    @include mq-break('m')  {
 
       // add grid gutter
       margin-left: 10px;
@@ -68,6 +67,74 @@
   }
 }
 
-.grid-logo-center {
-  @include img-grid-center;
+
+// Container
+
+.container {
+    width: 90%;
+    max-width: 1400px;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 1.6em;
+    font-family: $font-stack-primary;
+    font-size: $font-cont-size;
+    color: $color-text;
+    text-align: left;
+
+    @include mq-break('m') {
+      width: 80%;
+    }
+}
+
+.grid {
+
+  &__col--12.theme__colors {
+  @include grid-col-theme {
+    background: $grid-color-12;
+  }
+}
+
+  &__col--6.theme__colors {
+    background: $grid-color-6;
+    @include grid-col-theme {
+      background: $grid-color-6;
+    }
+  }
+
+  &__col--4.theme__colors {
+    background: $grid-color-4;
+    @include grid-col-theme {
+      background: $grid-color-4;
+    }
+  }
+
+  &__col--3.theme__colors {
+    background: $grid-color-3;
+    @include grid-col-theme {
+      background: $grid-color-3;
+    }
+  }  
+  
+  &__col--5.theme__colors {
+    background: $grid-color-5;
+    @include grid-col-theme {
+      background: $grid-color-5;
+    }
+  }
+
+  &__col--7.theme__colors {
+    background: $grid-color-7;
+    @include grid-col-theme {
+      background: $grid-color-7;
+    }
+  }
+
+  &__col--8.theme__colors {
+    background: $grid-color-8;
+    @include grid-col-theme {
+      background: $grid-color-8;
+    }
+  }
+  
+
 }

@@ -1,33 +1,36 @@
 .form {
     display: flex;
-    width: 90%;
     margin-left: auto;
     margin-right: auto;
+    margin-top: 15px;
     flex-wrap: wrap;
-    align-items: center;
-}
+    flex-flow: column;
 
-.form label {
-
+    .form__label--hidden {
     margin-top: 10px;
     display: none;
-}
+    }
 
-.form input {
-    display: block;
-    width: 100%;
-    border-top: 0;
-    border-left: 0;
-    border-right: 0;
-    border-bottom: 3px solid $color-primary;
-    margin-top: 30px;
-    height: 30px;
-    &::placeholder {
-        padding-left: 5px;
-        font-weight: bold;
-        font-size: 1.2em;
-    }}
+    .form__input {
+        align-items: center;
+        display: block;
+        width: 90%;
+        border: none;
+        border-bottom: 5px solid $color-primary;
+        margin-top: 2em;
+        height: 3em;
+        &::placeholder {
+            padding-left: 5px;
+            font-weight: normal;
+            font-size: 0.8em;
+        }
+    }
 
-    .form .grid-logo-center {
-        @include img-grid-center;
+        .grid-logo-center {
+            @include img-grid-center {
+                margin-top: 15px;
+            }
+        }
+
+    
     }

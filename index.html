@@ -6,6 +6,7 @@
   <title>Circles UI Kit</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="scss/base/normalize.css">
 </head>
 <!-- 
     List of classes used
@@ -64,11 +65,9 @@
 <body class="container">
   <div class="grid__row">
     <div class="grid__col--3">
-      <div class="grid-logo-center">
       <a class="link" href="/">
         <img class="img--logo" alt="circles logo" src="images/logo.png">
       </a>
-      </div>
     </div>
     <div class="grid__col--9">
       <nav role="navigation">
@@ -115,9 +114,7 @@
     <div class="grid__col--4">
       <form class="form">
         <legend id="forms" class="headline--secondary">Form Elements</legend>
-        <div class="grid-logo-center">
         <img class="img--avatar" src="images/avatar.png" alt="Avatar">
-        </div>
         <label class="form__label--hidden" for="username">Username:</label>
         <input class="form__input" type="text" id="username" placeholder="Username">
         <label class="form__label--hidden" for="password">Password:</label>
@@ -130,12 +127,12 @@
   <h4 id="images" class="headline--secondary">Images</h4>
 
   <div class="grid__row">
-    <div class="grid__col--6">
-      <img class="img--frame" src="images/image.png" alt="sample image">
-    </div>
-    <div class="grid__col--6">
-      <img class="img--avatar" src="images/avatar.png" alt="Avatar">
-    </div>
+      <div class="grid__col--6">
+        <img class="img--frame" src="images/image.png" alt="sample image">
+      </div>
+      <div class="grid__col--6">
+        <img class="img--avatar" src="images/avatar.png" alt="Avatar">
+      </div> 
   </div>
 
   <h4 id="buttons" class="headline--secondary">Buttons</h4>

@@ -5,8 +5,8 @@ $font-stack-primary: 'Helvetica Neue', sans-seriff;
 $font-cont-size: 1em;
 
 // Breakpoints
-$max-break-mobile: 768px;
-$min-break-desktop: 769px;
+$break-s: 1px; //just a reference
+$break-m: 768px;
 $max-width: 1400px;
 
 // Colors
@@ -15,11 +15,19 @@ $white: #fff;
 $color-primary: #58E1C1;
 $color-secondary: #54DEFC;
 
-$color-text: darkgrey;
+$color-text: #999999;
 $color-bg: navy;
-$color-grid: black;
 $color-buttons: red;
 $color-hover: tomato;
+
+        // Grid Colors
+$grid-color-12: #80E8D1;
+$grid-color-6: #3FABCA;
+$grid-color-4: #7DE6FD;
+$grid-color-3: #DEB1EE;
+$grid-color-5: #88D9A0;
+$grid-color-7: #EC9FA3;
+$grid-color-8: #FD9E85;
 
 // Buttons
 $text-btn-size: 0.7em;
@@ -33,3 +41,7 @@ $color-btn-error: #E4757B;
 $color-btn-warning: #FD7856;
 
 $color-btn-info: #927BC1;
+
+//Grid border
+
+$grid-border-rounded: 5px;
