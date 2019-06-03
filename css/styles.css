@@ -790,7 +790,6 @@ template {
   flex-flow: column;
   display: flex;
   justify-content: center;
-  flex-wrap: wrap;
 }
 .form .form__label--hidden {
   margin-top: 10px;
@@ -860,7 +859,6 @@ template {
     flex-wrap: nowrap;
     display: flex;
     justify-content: center;
-    flex-wrap: wrap;
   }
 
   .nav a {
