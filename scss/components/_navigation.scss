@@ -4,11 +4,11 @@
 
 @include mq-break ('m') {
     .nav {
+        @include flexbox-center {
         margin-top: 21px;
         width: 100%;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
+        flex-wrap: nowrap;
+        }
 
     }
 
