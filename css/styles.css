@@ -1,3 +1,9 @@
+.img--avatar, .img--frame, .img--logo {
+  display: block;
+  margin: 0 auto;
+  align-content: center;
+}
+
 * {
   box-sizing: border-box;
 }
@@ -339,12 +345,6 @@ template {
  */
 [hidden] {
   display: none;
-}
-
-.img--avatar, .img--frame, .img--logo {
-  display: block;
-  margin: 0 auto;
-  align-content: center;
 }
 
 .grid__row {
